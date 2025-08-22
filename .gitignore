@@ -15,8 +15,11 @@ node_modules/
 dist/
 coverage/
 
+.env
+
 # Typescript
 .tsbuildinfo
+*.d.ts
 *.d.ts.map
 *.js
 *.js.map
@@ -25,6 +28,7 @@ coverage/
 .npm/
 .pnpm-store/
 npm-debug.log*
+pnpm-lock.yaml
 yarn-debug.log*
 yarn-error.log*
 package-lock.json
