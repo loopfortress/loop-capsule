@@ -1,0 +1,23 @@
+{
+  "name": "@loopfortress/capsule",
+  "version": "1.0.0",
+  "description": "Loop Capsule File Module Loader",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "proto": "docker compose run --rm proto",
+    "proto-up": "docker compose up -d proto",
+    "proto-down": "docker compose down proto",
+    "proto-logs": "docker compose logs -f proto",
+    "dev": "docker compose run -it --rm dev",
+    "tsc": "tsc",
+    "build": "tsc",
+    "test": "node --test"
+  },
+  "license": "MIT",
+  "packageManager": "pnpm@10.13.1",
+  "dependencies": {
+    "@types/node": "^24.3.0",
+    "typescript": "^5.9.2"
+  }
+}

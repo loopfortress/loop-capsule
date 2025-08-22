@@ -1,0 +1,12 @@
+{
+  "runners": {
+    "types": {
+      "watch": [{
+        "match": "**/*.ts",
+        "ignore": "**/*.d.ts"
+      }],
+      "interpreter": "pnpm",
+      "command": "tsc"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+services:
+  dev:
+    image: loopfortress/node-devshell
+    container_name: loop-capsule-devshell
+    entrypoint: ["bash"]
+    working_dir: "/app"
+    user: "${DEV_UID}:${DEV_GID}"
+    restart: no
+    volumes:
+      - .:$APP_HOME:rw
+  exec:
+    image: loopfortress/node-devshell
+    container_name: loop-capsule-devshell
+    entrypoint: ["bash", "-c"]
+    working_dir: "/app"
+    user: "${DEV_UID}:${DEV_GID}"
+    restart: no
+    volumes:
+      - .:$APP_HOME:rw
+  proto:
+    image: loopfortress/node-protoshell
+    container_name: loop-capsule-protoshell
+    working_dir: "/app"
+    user: "${DEV_UID}:${DEV_GID}"
+    restart: no
+    environment:
+      PROTOSHELL_CONFIG: "$APP_HOME/.protoshell.json"
+      LOG_INFO: true
+      LOG_DEBUG: false
+    volumes:
+      - .:$APP_HOME:rw

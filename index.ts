@@ -1,0 +1,6 @@
+export * from './src/Capsule.js'
+export * from './src/ClassCapsule.js'
+export * from './src/FunctionCapsule.js'
+export * from './src/ModuleCapsule.js'
+export * from './src/ObjectCapsule.js'
+export * from './src/utils/lookupdir.js'

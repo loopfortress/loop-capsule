@@ -1,0 +1,61 @@
+# OS/Editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.#*
+.nfs*
+.idea/
+.vscode/
+*.code-workspace
+
+# Node/JS
+node_modules/
+dist/
+coverage/
+
+# Typescript
+.tsbuildinfo
+*.d.ts.map
+*.js
+*.js.map
+
+# NodeJS package managers
+.npm/
+.pnpm-store/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+.pnpm-debug.log*
+.npm-cache/
+
+# Compressed files
+*.7z
+*.zip
+*.rar
+*.gz
+*.tar
+*.tgz
+*.bz2
+*.xz
+
+# Binary and executables
+*.exe
+*.dll
+*.so
+*.dylib
+*.bin
+*.out
+
+# Disk images
+*.iso
+*.img
+*.dmg
+
+# Database backups
+*.dump
+*.sqlite
+*.db
