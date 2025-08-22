@@ -4,6 +4,7 @@
   "description": "Loop Capsule File Module Loader",
   "type": "module",
   "main": "index.js",
+  "repository": "https://github.com/loopfortress/loop-capsule",
   "scripts": {
     "proto": "docker compose run --rm proto",
     "proto-up": "docker compose up -d proto",
